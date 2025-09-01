@@ -24,14 +24,14 @@ const SECTIONS = [
 ];
 
 const CERTIFICATES = [
-  { id: "codecamp1", title: "CodeCamp — Frontend Fundamentals", img: codecamp1, alt: "Sertifikat CodeCamp 1", desc: "Penyelesaian modul HTML, CSS, JavaScript dasar." },
-  { id: "codecamp2", title: "CodeCamp — React Basics", img: codecamp2, alt: "Sertifikat CodeCamp 2", desc: "Pengenalan komponen, props, dan state di React." },
-  { id: "codecamp3", title: "CodeCamp — Advanced React", img: codecamp3, alt: "Sertifikat CodeCamp 3", desc: "Hooks, routing, dan manajemen state lanjutan." },
-  { id: "BE", title: "Backend Engineering", img: BE, alt: "Sertifikat Backend Engineering", desc: "REST API, autentikasi, dan integrasi database." },
-  { id: "dataAnalisis", title: "Data Analytics — Essentials", img: dataAnalisis, alt: "Sertifikat Data Analytics 1", desc: "Eksplorasi data, visualisasi, dan basic statistics." },
-  { id: "Data", title: "Data — Visualization", img: Data, alt: "Sertifikat Data Visualization", desc: "Charting dan storytelling dengan data." },
-  { id: "mikro", title: "Microservices Fundamentals", img: mikro, alt: "Sertifikat Microservices", desc: "Arsitektur layanan, komunikasi, dan deployment." },
-  { id: "word", title: "Microsoft Word — Productivity", img: word, alt: "Sertifikat Microsoft Word", desc: "Automasi dokumen dan pengaturan format profesional." },
+  { id: "codecamp1", title: "CodeCamp — Responsive Web Design", img: codecamp1, alt: "Sertifikat CodeCamp 1", desc: "Earned the Responsive Web Design Certification from freeCodeCamp, gaining strong foundations in HTML, CSS, Flexbox, Grid, and media queries. Experienced in building responsive, accessible, and user-friendly websites with modern design practices." },
+  { id: "codecamp2", title: "CodeCamp — Javascript algorithms and Data structures", img: codecamp2, alt: "Sertifikat CodeCamp 2", desc: "Earned the JavaScript Algorithms and Data Structures Certification from freeCodeCamp, gaining proficiency in modern JavaScript (ES6), algorithmic problem-solving, and data structure implementation through hands-on projects." },
+  { id: "codecamp3", title: "CodeCamp — Front End Development Libraries", img: codecamp3, alt: "Sertifikat CodeCamp 3", desc: "Completed the Front End Development Libraries Certification from freeCodeCamp. Developed expertise in React, Bootstrap, and jQuery, applying modern design principles to create dynamic and interactive user interfaces." },
+  { id: "BE", title: "MySkill Short Class — Backend Development Fundamental ", img: BE, alt: "Sertifikat Backend Engineering", desc: "Completed the Backend Development Fundamental Short Class by MySkill, gaining foundational knowledge in backend architecture, API development, server-side programming, and database management to support software development." },
+  { id: "dataAnalisis", title: "RevoU Mini Course — Intro to Data Analytics", img: dataAnalisis, alt: "Sertifikat Data Analytics 1", desc: "Completed the Intro to Data Analytics Mini Course by RevoU, developing foundational skills in data processing, visualization, and the use of analytical tools to support data-driven decision making." },
+  { id: "Data", title: "MySkill Short Class — Data Visualization with Looker Data Studio", img: Data, alt: "Sertifikat Data Visualization", desc: "Completed the Data Visualization with Looker Data Studio Short Class by MySkill, gaining hands-on experience in building interactive dashboards, designing effective visualizations, and presenting insights to support business decision-making" },
+  { id: "mikro", title: "Maestro Academy — MikroTik", img: mikro, alt: "Sertifikat Microservices", desc: "Earned MikroTIK Training and Certification from HTP – Maestro Academy, gaining practical skills in networking fundamentals, router configuration, and managing network infrastructure for reliable connectivity." },
+  { id: "word", title: "MySkill Short Class — Wordpres Introduction", img: word, alt: "Sertifikat Microsoft Word", desc: "Completed the WordPress Introduction Short Class by MySkill, gaining practical knowledge in WordPress setup, content management, and customization of themes and plugins to build functional and user-friendly websites." },
 ];
 
 function App() {
@@ -214,47 +214,306 @@ function App() {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
               {/* HTML5 */}
-              <div className="bg-black rounded-lg p-5 sm:p-6 flex flex-col items-center shadow hover:shadow-lg transition">
-                <i className="fab fa-html5 text-3xl sm:text-4xl text-orange-500"></i>
-                <p className="mt-2 sm:mt-3 font-semibold text-white">HTML5</p>
-                <div className="w-full h-1 bg-gray-700 mt-2">
-                  <div className="w-4/5 h-full bg-emerald-400"></div>
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fab fa-html5 text-4xl text-orange-500"></i>
+                    <p className="mt-2 font-semibold text-white">HTML5</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-4/5 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">100%</p>
+                  </div>
                 </div>
               </div>
 
-              {/* CSS */}
-              <div className="bg-black rounded-lg p-5 sm:p-6 flex flex-col items-center shadow hover:shadow-lg transition">
-                <i className="fab fa-css3-alt text-3xl sm:text-4xl text-blue-500"></i>
-                <p className="mt-2 sm:mt-3 font-semibold text-white">Tailwind CSS</p>
-                <div className="w-full h-1 bg-gray-700 mt-2">
-                  <div className="w-4/5 h-full bg-emerald-400"></div>
+              {/* Tailwind CSS */}
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fab fa-css3-alt text-4xl text-blue-500"></i>
+                    <p className="mt-2 font-semibold text-white">Tailwind CSS</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-4/5 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">95%</p>
+                  </div>
                 </div>
               </div>
 
               {/* JavaScript */}
-              <div className="bg-black rounded-lg p-5 sm:p-6 flex flex-col items-center shadow hover:shadow-lg transition">
-                <i className="fab fa-js-square text-3xl sm:text-4xl text-yellow-400"></i>
-                <p className="mt-2 sm:mt-3 font-semibold text-white">JavaScript</p>
-                <div className="w-full h-1 bg-gray-700 mt-2">
-                  <div className="w-4/5 h-full bg-emerald-400"></div>
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fab fa-js-square text-4xl text-yellow-400"></i>
+                    <p className="mt-2 font-semibold text-white">JavaScript</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-4/5 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">95%</p>
+                  </div>
                 </div>
               </div>
 
               {/* PHP */}
-              <div className="bg-black rounded-lg p-5 sm:p-6 flex flex-col items-center shadow hover:shadow-lg transition">
-                <i className="fab fa-php text-3xl sm:text-4xl text-indigo-400"></i>
-                <p className="mt-2 sm:mt-3 font-semibold text-white">PHP</p>
-                <div className="w-full h-1 bg-gray-700 mt-2">
-                  <div className="w-3/4 h-full bg-emerald-400"></div>
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fab fa-php text-4xl text-indigo-400"></i>
+                    <p className="mt-2 font-semibold text-white">PHP</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-3/4 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">80%</p>
+                  </div>
                 </div>
               </div>
 
               {/* GitHub */}
-              <div className="bg-black rounded-lg p-5 sm:p-6 flex flex-col items-center shadow hover:shadow-lg transition">
-                <i className="fab fa-github text-3xl sm:text-4xl text-white"></i>
-                <p className="mt-2 sm:mt-3 font-semibold text-white">GitHub</p>
-                <div className="w-full h-1 bg-gray-700 mt-2">
-                  <div className="w-4/5 h-full bg-emerald-400"></div>
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fab fa-github text-4xl text-white"></i>
+                    <p className="mt-2 font-semibold text-white">GitHub</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-4/5 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">90%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* MySQL */}
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fas fa-database text-4xl text-blue-500"></i>
+                    <p className="mt-2 font-semibold text-white">MySQL</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-3/4 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">85%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* MongoDB */}
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fas fa-database text-4xl text-green-500"></i>
+                    <p className="mt-2 font-semibold text-white">MongoDB</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-3/5 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">70%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Laravel */}
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fab fa-laravel text-4xl text-red-500"></i>
+                    <p className="mt-2 font-semibold text-white">Laravel</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-3/4 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">90%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* React */}
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fab fa-react text-4xl text-blue-500"></i>
+                    <p className="mt-2 font-semibold text-white">React</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-4/5 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">90%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Vue */}
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fab fa-vuejs text-4xl text-green-500"></i>
+                    <p className="mt-2 font-semibold text-white">Vue</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-3/4 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">80%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Python */}
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fab fa-python text-4xl text-yellow-500"></i>
+                    <p className="mt-2 font-semibold text-white">Python</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-4/5 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">85%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Golang */}
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fab fa-golang text-4xl text-blue-500"></i>
+                    <p className="mt-2 font-semibold text-white">Golang</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-3/4 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">85%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Vercel */}
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fab fa-vercel text-4xl text-white"></i>
+                    <p className="mt-2 font-semibold text-white">Vercel</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-3/4 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">70%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Java */}
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fab fa-java text-4xl text-red-500"></i>
+                    <p className="mt-2 font-semibold text-white">Java</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-3/4 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">75%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Communication */}
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fas fa-comments text-4xl text-blue-600"></i>
+                    <p className="mt-2 font-semibold text-white">Communication</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-4/5 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">90%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Team Work */}
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fas fa-users text-4xl text-purple-500"></i>
+                    <p className="mt-2 font-semibold text-white">Team Work</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-4/5 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">95%</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -266,7 +525,7 @@ function App() {
           <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 py-12 md:py-20">
             <h2 className="text-2xl sm:text-3xl font-bold text-center">Certificates</h2>
             <p className="text-gray-600 mt-2 text-center">
-              Beberapa sertifikat pelatihan dan bootcamp yang telah saya selesaikan.
+              Certificates from various training programs and bootcamps I have successfully completed.
             </p>
 
             <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -378,10 +637,10 @@ function App() {
                 </button>
 
                 {sent === 'ok' && (
-                  <p className="text-sm text-emerald-600">Thanks! Pesan kamu sudah terkirim. 🎉</p>
+                  <p className="text-sm text-emerald-600">Thanks! Your message has been sent. 🎉</p>
                 )}
                 {sent === 'err' && (
-                  <p className="text-sm text-red-600">Oops, gagal mengirim. Coba lagi ya.</p>
+                  <p className="text-sm text-red-600">Oops, failed to send. Please try again..</p>
                 )}
               </form>
             </div>
@@ -428,9 +687,9 @@ function App() {
         </section>
       </main>
 
-      {/* <footer className="py-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} MyPortfolio
-      </footer> */}
+      <footer className="py-6 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} Arye Abisha Munthe
+      </footer>
     </div>
   );
 }
