@@ -70,9 +70,9 @@ function App() {
   return (
     <div className="min-h-screen">
       {/* HEADER (responsive + hamburger) */}
-      <header className="bg-gray-900 text-white sticky top-0 z-50">
+       <header style={{ backgroundColor: "#415E72" }} className="text-white sticky top-0 z-50">
         <nav className="max-w-6xl mx-auto flex items-center justify-between py-3 px-4 sm:px-6">
-          <h1 className="text-lg sm:text-xl font-bold">Arye Abisha Munthe</h1>
+          <h1 className="text-2xl sm:text-2xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-red-600">Arye Abisha Munthe</h1>
 
           {/* Desktop nav */}
           <ul className="hidden md:flex gap-6">
@@ -134,15 +134,17 @@ function App() {
       </header>
 
       {/* MAIN CONTENT */}
-      <main className="gray">
+     <main className="bg-gray-900">
         {/* Dashboard */}
         <section id="dashboard" className="min-h-screen flex items-center scroll-mt-24 md:scroll-mt-28">
           <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 py-12 md:py-20">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center">Welcome to My Dashboard</h2>
-            <h2 className="text-2xl sm:text-3xl font-bold text-center mt-2">
-              HALO, saya Arye bisa dipanggil Ary
+            <h2 className="text-2xl sm:text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-red-600">
+              Welcome to My Dashboard
             </h2>
-            <p className="text-gray-700 mt-4 text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-center mt-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-red-600">
+              Hello, I'm Arye, you can call me Ary.
+            </h2>
+            <p className="text-blue-700 mt-4 text-center">
               This is where I showcase my work and journey.
             </p>
           </div>
@@ -161,15 +163,28 @@ function App() {
                 />
               </div>
               <div>
-                <p className="text-gray-700 leading-relaxed">
-                  I’m <span className="font-semibold">Arye Abisha Munthe</span>, a <span className="font-semibold">Software Engineer</span> yang fokus pada pengembangan end-to-end (frontend, backend, database, hingga deployment). Saya membangun aplikasi web dengan
-                  <span className="font-medium text-blue-600"> React</span>,
-                  <span className="font-medium text-emerald-600"> Laravel</span>, dan
-                  <span className="font-medium text-lime-600"> Node.js</span> (<span className="font-medium">Express</span>), merancang API <span className="font-medium">REST</span> dengan autentikasi <span className="font-medium">JWT/OAuth</span>, serta mengelola data menggunakan
-                  <span className="font-medium text-amber-600"> MongoDB</span> dan
-                  <span className="font-medium text-sky-600"> PostgreSQL</span>. 
-                  Saya familiar dengan <span className="font-medium">testing</span> (Jest/Postman), <span className="font-medium">CI/CD</span> (GitHub Actions), kontainerisasi <span className="font-medium">Docker</span>, dan deployment ke <span className="font-medium">Vercel/Render</span>. 
-                  Tujuan saya: merancang sistem yang bersih, terukur, aman, dan mudah dirawat.
+                <p className="text-white leading-relaxed">
+                  I’m <span className="font-semibold">Arye Abisha Munthe</span>, a{" "}
+                  <span className="font-semibold">fresh graduate</span> from{" "}
+                  <span className="font-medium text-red-600">Telkom University</span>, majoring in{" "}
+                  <span className="font-medium text-emerald-600">Information Technology</span> at the Faculty of Informatics.  
+                  I am passionate about becoming a{" "}
+                  <span className="font-semibold">Software Engineer</span> focusing on{" "}
+                  <span className="font-medium">end-to-end development</span> (frontend, backend, database, and deployment).  
+                  I build web applications with{" "}
+                  <span className="font-medium text-blue-600">React</span>,{" "}
+                  <span className="font-medium text-emerald-600">Laravel</span>, and{" "}
+                  <span className="font-medium text-lime-600">Node.js</span> (<span className="font-medium">Express</span>),  
+                  design <span className="font-medium">REST APIs</span> with{" "}
+                  <span className="font-medium">JWT/OAuth</span> authentication,  
+                  and manage data using{" "}
+                  <span className="font-medium text-amber-600">MongoDB</span> and{" "}
+                  <span className="font-medium text-sky-600">MySQL</span>.  
+                  I am also familiar with deployment to{" "}
+                  <span className="font-medium">Vercel</span>.  
+                  My goal is to design systems that are{" "}
+                  <span className="font-medium">clean, scalable, secure,</span> and{" "}
+                  <span className="font-medium">easy to maintain</span>.
                 </p>
               </div>
             </div>
@@ -179,28 +194,36 @@ function App() {
         {/* Projects */}
         <section id="projects" className="min-h-screen scroll-mt-24 md:scroll-mt-28">
           <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 py-12 md:py-20">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center">Projects</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-center text-white">Projects</h2>
             <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <li className="p-4 bg-white rounded shadow hover:shadow-lg transition">
+              <li className="p-4 bg-transparent rounded shadow hover:shadow-lg transition">
                 <img src={premiumImg} alt="Premium Portal" className="w-full h-40 sm:h-48 object-cover rounded mb-3" />
-                <h3 className="font-semibold text-lg">Premium Portal</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Web platform untuk manajemen data internal.
+                <h3 className="font-semibold text-blue-600">Premium Portal</h3>
+                <p className="text-sm text-white mt-1">
+                  PremiumPortal.id is a project I worked on during my internship as part of a team. This platform is built using the 
+                  MERN stack (MongoDB, Express, React, Node.js) and aims to streamline data management with a modern and intuitive interface. 
+                  It offers a secure and responsive web experience, accessible from both desktop and mobile devices. Working on this project allowed
+                  me to collaborate with a team while applying my knowledge of full-stack development and problem-solving in a real-world setting.
                 </p>
               </li>
-              <li className="p-4 bg-white rounded shadow hover:shadow-lg transition">
+              <li className="p-4 bg-transparent rounded shadow hover:shadow-lg transition">
                 <img src={travelImg} alt="TravelAble" className="w-full h-40 sm:h-48 object-cover rounded mb-3" />
-                <h3 className="font-semibold text-lg">TravelAble</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Ini merupakan tugas kuliah dimana kami membuat web travel untuk kaum disabilitas agar bisa travelling ke sektitar bandung.
-                  Kami menggunakan framework MERN untuk mengembangkan web nya.
+                <h3 className="font-semibold text-blue-600">TravelAble</h3>
+                <p className="text-sm text-white mt-1">
+                  TravelAble is a group project from a university course assignment. The project aims to provide an accessible platform for individuals with 
+                  disabilities, making it easier for them to travel around Bandung. Built using the MERN stack (MongoDB, Express, React, Node.js), the platform
+                   ensures a smooth and inclusive experience with a strong focus on accessibility. This project gave me the opportunity to collaborate with my team
+                    and apply my full-stack development skills while addressing real-world challenges in creating inclusive solutions.
                 </p>
               </li>
-              <li className="p-4 bg-white rounded shadow hover:shadow-lg transition">
+              <li className="p-4 bg-transparent rounded shadow hover:shadow-lg transition">
                 <img src={officeImg} alt="OfficeHub" className="w-full h-40 sm:h-48 object-cover rounded mb-3" />
-                <h3 className="font-semibold text-lg">OfficeHub (Mobile App)</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Mobile app untuk kolaborasi dan booking ruang kerja.
+                <h3 className="font-semibold text-blue-600">OfficeHub (Mobile App)</h3>
+                <p className="text-sm text-white mt-1">
+                  OfficeHub is a group project developed as part of a university assignment. This mobile application is designed to streamline office-related tasks for 
+                  employees, including login, QR code attendance scanning, leave requests, sending messages between users (employees), and managing contacts. Built using Dart, 
+                  Android Studio, and Firebase, the app offers an efficient and user-friendly interface to enhance workplace productivity. This project provided me with an opportunity
+                  to collaborate with my team and apply mobile development skills to create practical solutions for office environments.
                 </p>
               </li>
             </ul>
@@ -210,7 +233,7 @@ function App() {
         {/* Skills */}
         <section id="skills" className="min-h-[60vh] scroll-mt-24 md:scroll-mt-28">
           <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 py-12 md:py-20">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10 text-black">Skills</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10 text-white">Skills</h2>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
               {/* HTML5 */}
@@ -225,7 +248,7 @@ function App() {
                   <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
                     <p className="text-white font-semibold">Skill Level</p>
                     <div className="w-full h-2 bg-gray-700 mt-2 rounded">
-                      <div className="w-4/5 h-full bg-emerald-400 rounded"></div>
+                      <div className="w-full h-full bg-emerald-400 rounded"></div>
                     </div>
                     <p className="text-emerald-400 mt-2">100%</p>
                   </div>
@@ -277,6 +300,25 @@ function App() {
                   <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
                     <i className="fab fa-php text-4xl text-indigo-400"></i>
                     <p className="mt-2 font-semibold text-white">PHP</p>
+                  </div>
+                  {/* Back */}
+                  <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
+                    <p className="text-white font-semibold">Skill Level</p>
+                    <div className="w-full h-2 bg-gray-700 mt-2 rounded">
+                      <div className="w-3/4 h-full bg-emerald-400 rounded"></div>
+                    </div>
+                    <p className="text-emerald-400 mt-2">80%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Node.js */}
+              <div className="flip-card w-full h-40">
+                <div className="flip-card-inner w-full h-full relative">
+                  {/* Front */}
+                  <div className="flip-card-front absolute inset-0 bg-black rounded-lg p-5 flex flex-col items-center justify-center shadow">
+                    <i className="fab fa-node-js text-4xl text-green-500"></i>
+                    <p className="mt-2 font-semibold text-white">Node.js</p>
                   </div>
                   {/* Back */}
                   <div className="flip-card-back absolute inset-0 bg-gray-900 rounded-lg p-5 flex flex-col justify-center items-center shadow">
@@ -523,27 +565,27 @@ function App() {
         {/* Certificates */}
         <section id="certificates" className="min-h-screen scroll-mt-24 md:scroll-mt-28">
           <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 py-12 md:py-20">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center">Certificates</h2>
-            <p className="text-gray-600 mt-2 text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-center text-white">Certificates</h2>
+            <p className="text-gray-300 mt-2 text-center">
               Certificates from various training programs and bootcamps I have successfully completed.
             </p>
 
             <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {CERTIFICATES.map((item) => (
-                <li key={item.id} className="p-4 bg-white rounded shadow hover:shadow-lg transition">
+                <li key={item.id} className="p-4 bg-transparent rounded shadow hover:shadow-lg transition">
                   <img src={item.img} alt={item.alt} className="w-full h-40 sm:h-48 object-cover rounded mb-3" loading="lazy" />
-                  <h3 className="font-semibold text-lg">{item.title}</h3>
-                  <p className="text-sm text-gray-600 mt-1">{item.desc}</p>
+                  <h3 className="font-semibold text-lg text-white">{item.title}</h3>
+                  <p className="text-sm text-gray-300 mt-1">{item.desc}</p>
                 </li>
               ))}
             </ul>
           </div>
         </section>
 
-        {/* Contact */}
+        {/* Contact Section */}
         <section id="contact" className="min-h-screen scroll-mt-24 md:scroll-mt-28">
           <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 py-12 md:py-20">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center">Contact</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-center text-white">Contact</h2>
 
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
               {/* LEFT: Info list */}
@@ -557,9 +599,9 @@ function App() {
                 >
                   <i className="fas fa-phone text-emerald-600 text-xl" aria-hidden="true"></i>
                   <div>
-                    <div className="text-sm text-gray-500">No. HP</div>
-                    <div className="text-lg font-semibold text-emerald-700">+62 821-6630-4219</div>
-                    <div className="text-xs text-gray-500 mt-1">Klik untuk chat via WhatsApp</div>
+                    <div className="text-sm text-emerald-500">No. HP</div>
+                    <div className="text-lg font-semibold text-emerald-500">+62 821-6630-4219</div>
+                    <div className="text-xs text-emerald-500 mt-1">Click to chat via WhatsApp</div>
                   </div>
                 </a>
 
@@ -571,11 +613,11 @@ function App() {
                 >
                   <i className="fas fa-map-marker-alt text-red-500 text-xl" aria-hidden="true"></i>
                   <div>
-                    <div className="text-sm text-gray-500">Lokasi</div>
-                    <div className="text-lg font-semibold text-gray-800">
+                    <div className="text-sm text-red-500">Location</div>
+                    <div className="text-lg font-semibold text-red-500">
                       Telkom University Landmark Tower (TULT)
                     </div>
-                    <div className="text-xs text-gray-500 mt-1">Klik untuk lihat peta</div>
+                    <div className="text-xs text-red-500 mt-1">Click to view the map</div>
                   </div>
                 </button>
 
@@ -583,8 +625,8 @@ function App() {
                 <div className="flex items-center gap-3 p-3 sm:p-4 border rounded">
                   <i className="fas fa-envelope text-blue-500 text-xl" aria-hidden="true"></i>
                   <div>
-                    <div className="text-sm text-gray-500">Gmail</div>
-                    <div className="text-lg font-semibold text-gray-800 select-all">
+                    <div className="text-sm text-blue-500">Gmail</div>
+                    <div className="text-lg font-semibold text-blue-500 select-all">
                       aryemunthe26@gmail.com
                     </div>
                   </div>
@@ -646,7 +688,7 @@ function App() {
             </div>
           </div>
 
-          {/* MAP MODAL */}
+           {/* MAP MODAL */}
           {openMap && (
             <div
               className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4"
@@ -684,12 +726,49 @@ function App() {
               </div>
             </div>
           )}
+          {/* Social Icons Section Inside Contact */}
+          <div className="max-w-6xl mx-auto flex flex-col items-center justify-center text-center mt-100">
+            {/* Social Icons */}
+            <div className="flex items-center gap-6 mb-4">
+              <a
+                href="https://www.linkedin.com/your-profile"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="text-white/80 hover:text-emerald-400 p-3 rounded hover:bg-white/10 transition"
+                title="LinkedIn"
+              >
+                <i className="fab fa-linkedin text-3xl" />
+              </a>
+              <a
+                href="https://github.com/your-username"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="text-white/80 hover:text-emerald-400 p-3 rounded hover:bg-white/10 transition"
+                title="GitHub"
+              >
+                <i className="fab fa-github text-3xl" />
+              </a>
+              <a
+                href="https://www.instagram.com/your-username"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="text-white/80 hover:text-emerald-400 p-3 rounded hover:bg-white/10 transition"
+                title="Instagram"
+              >
+                <i className="fab fa-instagram text-3xl" />
+              </a>
+            </div>
+
+            {/* Copyright Text */}
+            <p className="text-gray-400 text-sm">
+              © 2025 <span className="font-semibold text-gray-200">Arye Abisha Munthe</span>
+            </p>
+          </div>
         </section>
       </main>
-
-      <footer className="py-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Arye Abisha Munthe
-      </footer>
     </div>
   );
 }
