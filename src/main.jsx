@@ -13,6 +13,7 @@ import dataAnalisis from "./image/data analisis.jpg";
 import Data from "./image/data.jpg";
 import mikro from "./image/mikro.jpeg";
 import word from "./image/word.jpg";
+import { SiVercel } from "react-icons/si";
 
 const SECTIONS = [
   { id: "dashboard", label: "Dashboard" },
@@ -731,7 +732,7 @@ function App() {
             {/* Social Icons */}
             <div className="flex items-center gap-6 mb-4">
               <a
-                href="https://www.linkedin.com/your-profile"
+                href="https://www.linkedin.com/in/arye-abisha-munthe-ab296827b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -741,7 +742,7 @@ function App() {
                 <i className="fab fa-linkedin text-3xl" />
               </a>
               <a
-                href="https://github.com/your-username"
+                href="https://github.com/Ary-M23"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -751,7 +752,7 @@ function App() {
                 <i className="fab fa-github text-3xl" />
               </a>
               <a
-                href="https://www.instagram.com/your-username"
+                href="https://www.instagram.com/arye_munthe?igsh=MTMwanliZ2hsNDhlMQ=="
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
