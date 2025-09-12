@@ -157,11 +157,13 @@ function App() {
             <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-gray-900 text-center">About Me</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
               <div className="flex justify-center">
-                <img
-                  src={profile}
-                  alt="Arye Abisha Munthe"
-                  className="w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 object-cover rounded-full shadow-lg border-4 border-emerald-400"
-                />
+                <div className="p-[4px] rounded-full bg-gradient-to-r from-purple-600 to-red-600 shadow-lg">
+                  <img
+                    src={profile}
+                    alt="Arye Abisha Munthe"
+                    className="w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 object-cover rounded-full"
+                  />
+                </div>
               </div>
               <div>
                 <p className="text-white leading-relaxed">
