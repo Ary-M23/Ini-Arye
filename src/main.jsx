@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import profile from "./image/arye.jpeg";
+import profile from "./image/arye 3.jpg";
 import premiumImg from "./image/premium.png";
 import travelImg from "./image/travel.png";
 import officeImg from "./image/office.png";
@@ -14,6 +14,7 @@ import Data from "./image/data.jpg";
 import mikro from "./image/mikro.jpeg";
 import word from "./image/word.jpg";
 import { SiVercel } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const SECTIONS = [
   { id: "dashboard", label: "Dashboard" },
@@ -138,16 +139,36 @@ function App() {
      <main className="bg-gray-900">
         {/* Dashboard */}
         <section id="dashboard" className="min-h-screen flex items-center scroll-mt-24 md:scroll-mt-28">
-          <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 py-12 md:py-20">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-red-600">
+          <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 py-12 md:py-20 text-center">
+            
+            {/* Welcome text */}
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }} 
+              animate={{ opacity: 1, y: [0, -5, 0] }} 
+              transition={{ duration: 2, delay: 0.2, repeat: Infinity }}
+              className="text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-red-600"
+            >
               Welcome to My Dashboard
-            </h2>
-            <h2 className="text-2xl sm:text-3xl font-bold text-center mt-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-red-600">
+            </motion.h2>
+
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }} 
+              animate={{ opacity: 1, y: [0, -5, 0] }} 
+              transition={{ duration: 2, delay: 0.4, repeat: Infinity }}
+              className="text-2xl sm:text-3xl font-bold mt-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-red-600"
+            >
               Hello, I'm Arye, you can call me Ary.
-            </h2>
-            <p className="text-blue-700 mt-4 text-center">
+            </motion.h2>
+
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }} 
+              animate={{ opacity: 1, y: [0, -5, 0] }} 
+              transition={{ duration: 2, delay: 0.6, repeat: Infinity }}
+              className="text-blue-700 mt-4"
+            >
               This is where I showcase my work and journey.
-            </p>
+            </motion.p>
+
           </div>
         </section>
 
