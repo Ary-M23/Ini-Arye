@@ -788,7 +788,7 @@ function App() {
 
             {/* Copyright Text */}
             <p className="text-gray-400 text-sm">
-              © 2025 <span className="font-semibold text-gray-200">Arye Abisha Munthe</span>
+              © 2026 <span className="font-semibold text-gray-200">Arye Abisha Munthe</span>
             </p>
           </div>
         </section>
